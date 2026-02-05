@@ -2,6 +2,7 @@
 
 using namespace geode::prelude;
 
-$execute {
-    log::info("¡Hola desde mi mod de Geode!");
+$on_mod(Loaded) {
+    log::info("¡Hola desde el Moto G32! lisi445 logró pasar el error.");
 }
+
