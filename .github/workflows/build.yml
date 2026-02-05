@@ -17,7 +17,7 @@ jobs:
             target: Windows
           - name: Android
             os: ubuntu-latest
-            target: Android64
+            target: Android
 
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
@@ -33,8 +33,6 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: geode-mod-${{ matrix.config.target }}
-          path: build/*.geode
-          
-          
+          name: ${{ matrix.config.name }}-Build
+          path: "**/*.geode"
           
