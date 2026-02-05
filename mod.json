@@ -1,15 +1,16 @@
 {
 	"geode": "3.0.0-beta.1",
 	"version": "v1.0.0",
-	"id": "tu.nombre.robmod",
-	"name": "Mi Mod de Roblox",
-	"developer": "TuNombre",
-	"description": "Un mod increíble hecho desde mi G32",
+	"id": "lisandro.roblox.test",
+	"name": "Roblox Mod",
+	"developer": "Lisandro",
+	"description": "Mi primer mod desde el G32",
 	"settings": {
 		"mod-enabled": {
-			"name": "Activar Mod",
+			"name": "Enabled",
 			"type": "bool",
 			"default": true
 		}
 	}
 }
+
