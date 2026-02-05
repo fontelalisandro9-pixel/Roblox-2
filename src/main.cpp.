@@ -1,8 +1,10 @@
+// 1. LAS PREPARACIONES (Siempre arriba)
 #include <Geode/Geode.hpp>
-
 using namespace geode::prelude;
 
+// 2. EL CONTENIDO (Lo que querés que haga el mod)
 $on_mod(Loaded) {
-    log::info("¡Hola desde el Moto G32! lisi445 logró pasar el error.");
+    log::info("¡Mod lisi445 cargado con éxito!");
 }
 
+// 3. SI TENÉS MÁS CÓDIGO (Como modificar el menú), va después de lo anterior.
