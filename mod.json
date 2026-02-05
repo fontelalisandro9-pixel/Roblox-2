@@ -1,9 +1,9 @@
 {
 	"geode": "3.0.0-beta.1",
 	"version": "v1.0.0",
-	"id": "lisandro.roblox.test",
+	"id": "lisi445.roblox_test",
 	"name": "Roblox Mod",
-	"developer": "Lisandro",
+	"developer": "lisi445",
 	"description": "Mi primer mod desde el G32",
 	"settings": {
 		"mod-enabled": {
