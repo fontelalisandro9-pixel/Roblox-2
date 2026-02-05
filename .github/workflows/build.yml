@@ -1,11 +1,39 @@
-name: Build
-on: [push, workflow_dispatch]
+name: Build Geode Mod
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - name: Windows
+            os: windows-latest
+            target: Windows
+          - name: Android
+            os: ubuntu-latest
+            target: Android64
+
+    name: ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+
     steps:
       - uses: actions/checkout@v4
-      - uses: geode-sdk/build-geode-mod@main
+
+      - name: Build Mod
+        uses: geode-sdk/build-geode-mod@main
         with:
-          target: Android64
+          target: ${{ matrix.config.target }}
+          
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: geode-mod-${{ matrix.config.target }}
+          path: build/*.geode
+          
           
