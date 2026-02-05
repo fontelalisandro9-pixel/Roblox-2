@@ -1,17 +1,3 @@
-{
-	"geode": "3.0.0-beta.1",
-	"version": "v1.0.0",
-	"id": "lisi445.roblox_mod",
-	"name": "Roblox Mod",
-	"developer": "lisi445",
-	"description": "My first mod for Geometry Dash, made on a Moto G32!",
-	"settings": {
-		"mod-enabled": {
-			"name": "Enabled",
-			"type": "bool",
-			"default": true
-		}
-	}
-}
+
 
 
