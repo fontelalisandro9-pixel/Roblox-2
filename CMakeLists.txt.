@@ -1,13 +1,10 @@
 cmake_minimum_required(VERSION 3.13)
-
-# El nombre dentro de project() DEBE ser igual al de tu mod (sin espacios)
 project(RobloxMod)
 
 find_package(Geode REQUIRED)
 
-# Aquí le decimos que use el main.cpp y el mod.json
 add_geode_mod(
     lisi445.roblox_mod
-    SOURCES main.cpp
+    SOURCES src/main.cpp
 )
 
