@@ -4,7 +4,7 @@
 	"id": "lisi445.roblox_mod",
 	"name": "Roblox Mod",
 	"developer": "lisi445",
-	"description": "Mi primer mod desde el G32",
+	"description": "Mod para el Moto G32",
 	"settings": {
 		"mod-enabled": {
 			"name": "Enabled",
@@ -13,4 +13,5 @@
 		}
 	}
 }
+
 
