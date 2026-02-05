@@ -1,4 +1,4 @@
-name: Build Geode Mod
+name: BuildGeodeMod
 
 on:
   push:
@@ -35,5 +35,6 @@ jobs:
         with:
           name: geode-mod-${{ matrix.config.target }}
           path: build/*.geode
+          
           
           
