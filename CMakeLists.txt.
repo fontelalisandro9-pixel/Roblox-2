@@ -7,7 +7,7 @@ find_package(Geode REQUIRED)
 
 # Aquí le decimos que use el main.cpp y el mod.json
 add_geode_mod(
-    lisi445.roblox_test
+    lisi445.roblox_mod
     SOURCES main.cpp
 )
 
