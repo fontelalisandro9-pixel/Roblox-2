@@ -1,38 +1,25 @@
 name: Build Geode Mod
-
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   workflow_dispatch:
-
 jobs:
   build:
     strategy:
       fail-fast: false
       matrix:
         config:
-          - name: Windows
-            os: windows-latest
-            target: Windows
           - name: Android
             os: ubuntu-latest
             target: Android
-
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Build Mod
         uses: geode-sdk/build-geode-mod@main
         with:
+          bindings: geode-sdk/bindings
+          combine: true
           target: ${{ matrix.config.target }}
-          
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.config.name }}-Build
-          path: "**/*.geode"
           
