@@ -5,15 +5,8 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    strategy:
-      fail-fast: false
-      matrix:
-        config:
-          - name: Android
-            os: ubuntu-latest
-            target: Android
-    name: ${{ matrix.config.name }}
-    runs-on: ${{ matrix.config.os }}
+    name: Android Build
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Build Mod
@@ -21,5 +14,5 @@ jobs:
         with:
           bindings: geode-sdk/bindings
           combine: true
-          target: ${{ matrix.config.target }}
+          target: Android64
           
