@@ -1,4 +1,3 @@
-
 {
 	"geode": "3.0.0-beta.1",
 	"gd": {
@@ -9,8 +8,7 @@
 	"version": "v1.0.0",
 	"name": "Roblox 2 Mod",
 	"developer": "lisi445",
-	"description": "A fun mod inspired by Roblox elements for Geometry Dash.",
+	"description": "Inspired by Roblox elements.",
 	"repository": "https://github.com/fontelalisandro9-pixel/Roblox-2"
 }
-
 
