@@ -1,10 +1,20 @@
-// 1. LAS PREPARACIONES (Siempre arriba)
 #include <Geode/Geode.hpp>
+#include <Geode/modify/MenuLayer.hpp>
+
 using namespace geode::prelude;
 
-// 2. EL CONTENIDO (Lo que querés que haga el mod)
-$on_mod(Loaded) {
-    log::info("¡Mod lisi445 cargado con éxito!");
-}
+class $modify(MyMenuLayer, MenuLayer) {
+	bool init() {
+		if (!MenuLayer::init()) return false;
 
-// 3. SI TENÉS MÁS CÓDIGO (Como modificar el menú), va después de lo anterior.
+		auto label = CCLabelBMFont::create("Roblox 2 Mod Loaded!", "bigFont.fnt");
+		label->setPosition({CCDirector::get()->getWinSize().width / 2, 50});
+		label->setScale(0.5f);
+		this->addChild(label);
+
+		log::info("Hello from Roblox 2 Mod, lisi445!");
+
+		return true;
+	}
+};
+
