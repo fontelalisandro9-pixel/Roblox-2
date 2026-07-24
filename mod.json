@@ -1,15 +1,13 @@
 {
-	"geode": "3.0.0-beta.1",
-	"gd": {
-		"win": "2.204",
-		"android": "2.206"
-	},
-	"id": "lisi445.roblox2",
-	"version": "v1.0.0",
-	"name": "Roblox 2 Mod",
-	"developer": "lisi445",
-	"description": "Inspired by Roblox elements.",
-	"repository": "https://github.com/fontelalisandro9-pixel/Roblox-2"
+	"geode": "4.0.0",
+	"version": "1.0.0",
+	"id": "tu.fireinthehole",
+	"name": "Fire In The Hole Button",
+	"developer": "TuNombre",
+	"description": "Agrega un botón del meme al lado del logo de RobTop en el menú principal.",
+	"supports": {
+		"android32": "required",
+		"android64": "required",
+		"windows": "required"
+	}
 }
-
-
